@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">Connect &amp; Conquer</string>
+    <string name="open_drawer">open</string>
+    <string name="close_drawer">close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string-array name="roles">
+        <item>Select Job Tittle</item>
+        <item>Business Analyst</item>
+        <item>Data Analyst</item>
+        <item>Software Developer</item>
+        <item>Software Tester</item>
+        <item>Technical Support</item>
+        <item>Technical Writer</item>
+        <item>UI/UX Designer</item>
+        <item>Web Developer</item>
+    </string-array>
+
+
+    <string-array name="cgpa">
+        <item>Select CGPA</item>
+        <item>Low (Between 1-4)</item>
+        <item>Medium (Between 4-6)</item>
+        <item>Good (Between 6-8)</item>
+        <item>Very Good (Between 8-10)</item>
+    </string-array>
+
+
+    <string-array name="aptitude_skill">
+        <item>Select Aptitude Skill Level</item>
+        <item>Low </item>
+        <item>Medium </item>
+        <item>Good </item>
+        <item>Very Good </item>
+    </string-array>
+
+    <string-array name="problemsolving_skill">
+        <item>Select Problem Solving Level</item>
+        <item>Low </item>
+        <item>Medium </item>
+        <item>Good </item>
+        <item>Very Good </item>
+    </string-array>
+
+    <string-array name="programming_skill">
+        <item>Select Programming Skill Level</item>
+        <item>Low </item>
+        <item>Medium </item>
+        <item>Good </item>
+        <item>Very Good </item>
+        <item>Excellent </item>
+    </string-array>
+
+    <string-array name="abstractthink_skill">
+        <item>Select Abstract Thinking Skill Level</item>
+        <item>Low </item>
+        <item>Medium </item>
+        <item>Good </item>
+        <item>Very Good </item>
+    </string-array>
+
+    <string-array name="design_skill">
+        <item>Select Design Skill Level</item>
+        <item>Low </item>
+        <item>Medium </item>
+        <item>Good </item>
+        <item>Very Good </item>
+    </string-array>
+
+
+    <string-array name="ds_coding">
+        <item>Select Data Structure Skill Level</item>
+        <item>Low </item>
+        <item>Medium </item>
+        <item>Good </item>
+        <item>Very Good </item>
+    </string-array>
+
+
+    <string-array name="extracurricular">
+        <item>Select Extracurricular Skill Level</item>
+        <item>Low </item>
+        <item>Medium </item>
+        <item>Good </item>
+        <item>Very Good </item>
+    </string-array>
+
+
+    <string-array name="coresub_skill">
+        <item>Select Core Sub Skill Level</item>
+        <item>Low</item>
+        <item>High</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostJobActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/img_go_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            app:tint="@color/white" />
+
+
+        <TextView
+            android:id="@+id/txt_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Post a Job"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/header"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/job_icon" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img"
+        android:layout_marginTop="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/outer_shade"
+            android:orientation="vertical"
+            android:theme="@style/MatEditTestStyle">
+
+
+            <Spinner
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/job_role"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/rounded_outer_gray_shade"
+                android:entries="@array/roles"
+                android:paddingLeft="10dp"
+                android:textSize="14sp" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="Company Name"
+                app:boxStrokeColor="@color/colorPrimary"
+                app:boxStrokeErrorColor="@color/colorPrimary"
+                app:hintTextAppearance="@style/MatEditTestStyleTextLabel"
+                app:hintTextColor="@color/colorPrimary"
+                app:startIconDrawable="@drawable/ic_baseline_computer_24"
+                app:startIconTint="@color/colorPrimary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_company_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="Annual Salary (LPA)"
+                app:boxStrokeColor="@color/colorPrimary"
+                app:boxStrokeErrorColor="@color/colorPrimary"
+                app:hintTextAppearance="@style/MatEditTestStyleTextLabel"
+                app:hintTextColor="@color/colorPrimary"
+                app:startIconDrawable="@drawable/ic_baseline_attach_money_24"
+                app:startIconTint="@color/colorPrimary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_salary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:textSize="16dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="Job Description "
+                app:boxStrokeColor="@color/colorPrimary"
+                app:boxStrokeErrorColor="@color/colorPrimary"
+                app:hintTextAppearance="@style/MatEditTestStyleTextLabel"
+                app:hintTextColor="@color/colorPrimary"
+                app:startIconDrawable="@drawable/ic_baseline_computer_24"
+                app:startIconTint="@color/colorPrimary">
+
+                <EditText
+                    android:id="@+id/edt_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:inputType="textMultiLine"
+                    android:textSize="16dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/btn_submit"
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/button_circle_background"
+                android:gravity="center_vertical"
+                android:text="Post"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                tools:ignore="RtlCompat" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
